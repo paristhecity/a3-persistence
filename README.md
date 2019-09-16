@@ -7,7 +7,11 @@ This assignnment continues where we left off, extending it to use the most popul
 
 ===
 
-https://paristhecity-a3-paris-lopez.glitch.me/
+[https://paristhecity-a3-paris-lopez.glitch.me](https://paristhecity-a3-paris-lopez.glitch.me/) <br>
+Login information: <br>
+Username: admin <br>
+Password: admin
+
 
 Based on my experience with creating math problems and designs for mathspring.org, an intelligent tutoring system, 
 I decided to create a login page and roster for a set of teachers. While there are many ways to elaborate on my 
@@ -31,10 +35,6 @@ as remove them.
 
 Though, I was unable to complete more of my original ideas beyond these features, the web app still 
 provides a few options for the user and does so in a responsive and clear manner.
-
-Login information: <br>
-Username: admin <br>
-Password: admin
 
 
 ## Technical Achievements
