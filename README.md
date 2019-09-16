@@ -5,70 +5,48 @@ Due: September 16th, by 11:59 AM.
 
 This assignnment continues where we left off, extending it to use the most popular Node.js server framework (express), a flat file database suitable for small applications (lowdb), and a CSS application framework / template of your choice (Boostrap, Material Design, Semantic UI, Pure etc.)
 
+===
 
-Baseline Requirements
----
+https://paristhecity-a3-paris-lopez.glitch.me/
 
-Your application is required to implement the following functionalities:
+Based on my experience with creating math problems and designs for mathspring.org, an intelligent tutoring system, 
+I decided to create a login page and roster for a set of teachers. While there are many ways to elaborate on my 
+original plan, I did not have enough time to explore all of my options for this page. I would have liked to have built 
+a page where several users could log-in and look at their roster, as well as the grades that accompany each student. 
+The teacher would be able to remove students from their class and add new students. When the 'information' button 
+is clicked, the teacher can add grades and assignments to the student chosen. Preferably, there would have been
+a navigation bar at the top of the page to switch between assignments and account information for the target student.
+Currently, all the information is based on one account of a teacher, and if one were to login as the other
+teacher (teacher1, teacher1), the tables would be occupied by only the students of the admin teacher. This was intentional
+to get started. My plan was to add an attribute in each object to track the active person. This attribute would be 
+set to '0' when the user is not active, and '1' when either a teacher logs on or when a student is chosen and becomes
+the 'active' teacher or student. This way all the student information can be gathered from the appropriate sources; 
+whether it is a list of students, or a single student.
 
-- a `Server`, created using Express (no alternatives will be accepted for this assignment)
-- a `Results` functionality which shows the entire dataset residing in the server's memory
-- a `Form/Entry` functionality which allows users to add, modify, and delete data items (must be all three!) associated with their user name / account.
-- Use of at least five [Express middleware packages](https://expressjs.com/en/resources/middleware.html). Explore! 
-- Basic authentication using the [Passport middleware](http://www.passportjs.org) for Express (this counts as one of your five middleware packages). We encourage using the Local strategy, but OAuth (Open Authentication) can also be used for additional technical achievement. The course staff cannot help you with the various flavors of OAuth strategies. YOU MUST PROVIDE US WITH ACCOUNT CREDENTIALS TO LOGIN TO YOUR APPLICATION IF YOU USE OAUTH. The course staff cannot be expected to have credentials for any particular OAuth service.
-- Persistent data storage in between server sessions. [lowdb](https://github.com/typicode/lowdb) is a suitable database package for this assignment and will be discussed in class.
-- Use of a [CSS framework or template](https://github.com/troxler/awesome-css-frameworks). This should do the bulk of your styling/CSS for you and be appropriate to your application. For example, don't use [NES.css](https://nostalgic-css.github.io/NES.css/) (which is awesome!) unless you're creating a game or some type of retro 80s site.
+Because the database, password service, and server required a lot of time to get started, I found myself with less time 
+than intended to piece together my design. With the remaining time I was able to build a login page, as well 
+as the beginnings of a student roster and list of assignments. Students can be added and removed from the list, 
+and the more information button brings the user to the list of assignments. The teacher can add assignments as well 
+as remove them. 
 
-Your application is required to demonstrate the use of the following concepts:
+Though, I was unable to complete more of my original ideas beyond these features, the web app still 
+provides a few options for the user and does so in a responsive and clear manner.
 
-HTML:
-- HTML input tags and form fields of various flavors (`<textarea>`, `<input>`, checkboxes, radio buttons etc.)
-- HTML that can display all data *for a particular authenticated user*. Note that this is different from the last assignnment, which required the display of all data in memory on the server.
+Login information: <br>
+Username: admin <br>
+Password: admin
 
-Note that it might make sense to have two simple pages for this assignment, one that handles login / authentication, and one that contains the rest of your application. For this assignment, it is acceptable to simply create new user accounts upon login if none exist, however, you must alert your users to this fact. If you're not using OAuth 
-
-CSS:
-- CSS styling should primarily be provided by your chosen template/framework. Oftentimes a great deal of care has been put into designing CSS templates; don't override their stylesheets unless you are extremely confident in your graphic design capabilities. The idea is to use CSS templates that give you a professional looking design aesthetic without requiring you to be a graphic designer yourself.
-
-JavaScript:
-- At minimum, a small amount of front-end JavaScript to get / fetch data from the server. See the [previous assignment](https://github.com/cs4241-19a/a2-shortstack) for reference.
-
-Node.js:
-- A server using Express, at least five pieces of Express middleware, and a persistent database (a flat file using lowdb is great).
-
-Deliverables
----
-
-Do the following to complete this assignment:
-
-1. Implement your project with the above requirements. A good potential starting point is to use the "hello-express" project template inside of Glitch; this appears as an option when you hit the "New Project" button. Use the work you did in the last assignment as a reference to implement functionality, as well as the notes from class on 9/9 and 9/12.
-2. If you developed your project locally, deploy your project to Glitch, and fill in the appropriate fields in your package.json file.
-3. Test your project to make sure that when someone goes to your main page on Glitch, it displays correctly.
-4. Ensure that your project has the proper naming scheme `a3-yourname` so we can find it.
-5. Fork this repository and modify the README to the specifications below. You do not need to include any of your project files in this repo (we will see those on Glitch), you only need to update and commit the README file.
-6. Create and submit a Pull Request to the original repo. Name the pull request using the following template: `a3-gitname-firstname-lastname`.
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-## Your Web Application Title
-
-your glitch link e.g. http://a3-charlieroberts.glitch.me
-
-Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
-
-- the goal of the application
-- challenges you faced in realizing the application
-- what authentication strategy / database you chose to use and why (choosing one because it seemed the easiest to implement is perfectly acceptable)
-- what CSS framework you used and why.
-  - include any modifications to the CSS framework you made via custom CSS you authored.
-- the five Express middleware packages you used and a short (one sentence) summary of what each one does.
 
 ## Technical Achievements
-- **Tech Achievement 1**: I used OAuth authentication via the GitHub strategy
-- **Tech Achievement 2**: I used over ten Express middleware packages, enabling me to create a server that...
+- **Tech Achievement 1**: I completed the technical aspect of the assignment 
+by creating a lowdb database that stores various information and provides it to the web page when necessary.
 
 ### Design/Evaluation Achievements
-- **Design Achievement 1**: I tested my application using screen reading software, and found that...
-- **Design Achievement 2**: I followed best practices for accessibility, including providing alt attributes for images and using semantic HTML. There are no `<div>` or `<span>` elements in my document.
-- **Design Achievement 3**: We tested the application with n=X users, finding that...
+- **Design Achievement 1**: Prior to the creation of the web application, I put great thought into my ideas and design. 
+I found the CSS Template to be greatly limiting, however I was still able to create a clean user interface appropriate 
+for its purpose. I prepared my web application with some simple drawings to sketch out my ideas on paper. With a 
+prototype in hand, I moved onto building the web app itself.
+
+- **Design Achievement 2**: I utilized a Bootstrap CSS template that provided a majority of the style and the functionality. I
+also included a couple of JQuery scripts to make the removal of table rows easier and the connection between multiple
+pages. 
